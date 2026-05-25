@@ -9,4 +9,5 @@ headers = {
 
 response = requests.get(url , headers=headers) 
 simpsons = pd.read_html(StringIO(response.text))
-print(simpsons[1])
+for i in range(len(simpsons)):
+  print(simpsons[i])
